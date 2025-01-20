@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izabelly Martins</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#pagina-inicial" class="logo">Izabelly Martins</a>
+
+        <nav>
+            <a href="#pagina-inicial" class="">Início</a>
+            <a href="#sobre" class="">Sobre</a>
+            <a href="#habilidades" class="">Habilidades</a>
+            <a href="#projetos" class="">Projetos</a>
+            <a href="#contato" class="">Contato</a>
+        </nav>
+    </header>
+
+    <div class="inicio" id="pagina-inicial">
+        <div class="inicio-img">
+            <img src="assets/foto-portifolio.jpg" alt="Izabelly Martins">
+        </div>
+        <div class="inicio-conteudo">
+            <h1>Olá, me chamo <span>Izabelly!</span></h1>
+            <h3>Desenvolvedora Back-End</h3>
+            <div class="iconessociais">
+                <a href="https://www.linkedin.com/in/izabellymartins/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/IzabellyMartins" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:izabellymartins820@gmail.com"><i class="fa-brands fa-google"></i></a>
+            </div>
+            <a href="#sobre" class="scroll-down"><i class="fas fa-arrow-down"></i> Sobre mim</a>
+        </div>
+        
+    </div>
+    <div id="sobre" class="sobre">
+        <div class="sobre-box">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou estudante de Engenharia da Computação na UFS, apaixonada pela área da tecnologia e
+                atualmente trabalhando para desenvolver minhas habilidades e me tornar uma desenvolvedora
+                Full-Stack. Agora, especializando minhas habilidades no back-end estudando Java e Spring Boot.
+                e buscando criar soluções eficientes e escaláveis. Estou envolvida em projetos que incluem APIs,
+                microsserviços, arquitetura MVC e princípios SOLID. 
+                Meu objetivo é sempre aprender e aplicar novas tecnologias
+                para crescer em minha jornada como desenvolvedora.
+            </p>
+            <a href="assets/curriculo-izabelly-g.pdf" download="Izabelly_Martins_CV" class="btn-baixar-cv">Download do CV</a>
+        </div>
+    </div>
+    <div id="habilidades" class="habilidades">
+        <div class="habilidades-box">
+            <h2>Minhas Habilidades</h2>
+            <p class="descricao">Aqui estão algumas linguagens e frameworks que uso</p>
+            
+            <div class="habilidade-secao">
+                <p class="habilidade-titulo"><strong>Front-End:</strong></p>
+                <div class="habilidade-icones">
+                    <img src="assets/js.png" class="habilidade-icone" alt="JavaScript">
+                    <img src="assets/html.png" class="habilidade-icone" alt="HTML">
+                    <img src="assets/css.png" class="habilidade-icone" alt="CSS">
+                </div>
+            </div>
+            
+            <div class="habilidade-secao">
+                <p class="habilidade-titulo"><strong>Back-End:</strong></p>
+                <div class="habilidade-icones">
+                    <img src="assets/js.png" class="habilidade-icone" alt="JavaScript">
+                    <img src="assets/node-js.png" class="habilidade-icone" alt="NodeJs">
+                    <img src="assets/express.svg" class="habilidade-icone" alt="ExpressJs">
+                    <img src="assets/mongodb.svg" class="habilidade-icone" alt="Mongodb">
+                    <img src="assets/mysql.png" class="habilidade-icone" alt="MySql">
+                    <img src="assets/postgre.png" class="habilidade-icone" alt="Postgres">
+                    <img src="assets/prisma.svg" class="habilidade-icone" alt="Prisma">
+                    <img src="assets/docker.png" class="habilidade-icone" alt="Docker">
+                    <img src="assets/java.png" class="habilidade-icone" alt="Java">
+                    <img src="assets/spring-boot.svg" class="habilidade-icone" alt="SpringBoot">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="projetos" class="projetos">
+        <div class="projetos-box">
+            <h2>Projetos</h2>
+            <p>Aqui você pode conferir alguns dos meus projetos realizados:</p>
+            <br>
+            <div class="projetos-grid">
+                <!-- Projeto 1 -->
+                <div class="projeto-card">
+                    <h3>Projeto Olimpíadas</h3>
+                    <h3>JavaScript + Html + CSS</h3>
+                    <p>
+                        Projeto da faculdade, com o objetivo de criar uma página
+                        com todos os códigos e interações implementados de forma funcional, seguindo 
+                        os princípios desse paradigma. Onde o usuário poderá ler curiosidades sobre as olimpíadas
+                        e interagir.
+                    </p>
+                    <a href="https://mulheresdeouro.netlify.app/" target="_blank" class="projeto-link">Link do projeto</a>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="projeto-card">
+                    <h3>Processos Judiciais</h3>
+                    <h3>Node.Js + Express.Js + MongoDB</h3>
+                    <p>
+                        API Gerenciador de Processos Judiciais. Esta Api foi criada com o intuito de agilizar 
+                        os processos no setor público, oferecendo uma solução simples e intuitiva para a gestão 
+                        de processos judiciais.
+                    </p>
+                    <a href="https://github.com/IzabellyMartins/processos-judiciais" target="_blank" class="projeto-link">Link do projeto</a>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="projeto-card">
+                    <h3>Controle de Estoque</h3>
+                    <h3> NodeJS + Express + Prisma + PostgreSQL + Docker</h3>
+                    <p>API de controle de estoque, onde temos um sistema de cadastro, 
+                        em que o usuário poderá cadastrar e atualizar os seus produtos para um melhor gerenciamento. 
+                        Realizar vendas e ver detalhes de entradas e saídas do seu estoque com informações sobre lucro 
+                        de acordo com período desejado.</p>
+                    <a href="https://controle-de-estoque-chi.vercel.app/" target="_blank" class="projeto-link">Link do projeto</a>
+                </div>
+                <!-- Projeto 4 -->
+                <div class="projeto-card">
+                    <h3>Lista de Tarefas</h3>
+                    <h3> Java + Spring Boot + PostgreSQL + Docker</h3>
+                    <p> API RESTFUL.</p>
+                    <a href="https://github.com/IzabellyMartins/to-do-list" target="_blank" class="projeto-link">Link do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contato" class="contato">
+        <div class="contato-box">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo preenchendo o formulário abaixo!</p>
+            <form action="https://formspree.io/f/movvgaeo" method="POST" class="form-contato">
+                <div class="form-grupo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="form-grupo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-grupo">
+                    <label for="mensagem">Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
