@@ -463,11 +463,6 @@ body:not(.dark-theme) #theme-toggle i {
         padding: 10px; 
     }
 
-    header {
-        padding: 10px 0;
-        font-size: 1.2rem; 
-    }
-
     #theme-toggle {
         font-size: 2rem; 
         padding: 8px 10px; 
@@ -485,10 +480,6 @@ body:not(.dark-theme) #theme-toggle i {
         padding: 15px; 
     }
 
-    header {
-        font-size: 1.5rem; 
-        padding: 20px 0;
-    }
 
     #theme-toggle {
         font-size: 2.5rem;
@@ -510,11 +501,6 @@ body:not(.dark-theme) #theme-toggle i {
     body {
         font-size: 1.2rem; 
         padding: 20px; 
-    }
-
-    header {
-        font-size: 2rem; 
-        padding: 30px 0;
     }
 
     #theme-toggle {
