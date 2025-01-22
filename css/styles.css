@@ -21,11 +21,12 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: #1a0d01;
+    background-color: #120901;
     color: #fff;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -34,27 +35,12 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem 9%;
-    background-color: #1a0d01;
+    background-color:#120901;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-nav a {
-    font-size: 1.8rem;
-    color: #fff;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
-
-nav a:hover,
-nav a.pagina-inicial{
-    color: #fff;
-    border-bottom: 3px solid #fff;
 }
 
 .logo {
@@ -310,7 +296,7 @@ nav a.pagina-inicial{
     padding: 1rem 1.6rem; 
     font-size: 1.8rem;
     background-color: #ffd700;
-    color: #1a0d01;
+    color: #120901;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -349,7 +335,7 @@ nav a.pagina-inicial{
     margin-top: 2rem;
     padding: 1rem 2rem;
     background-color: #ffd700; 
-    color: #1a0d01; 
+    color: #120901; 
     font-size: 1.6rem;
     font-weight: 600;
     border-radius: 0.5rem;
@@ -360,6 +346,189 @@ nav a.pagina-inicial{
 
 .btn-baixar-cv:hover {
     background-color: #fff;
-    color: #1a0d01;
+    color: #120901;
     transform: translateY(-3px);
+}
+
+.theme-toggle {
+    font-size: 3rem;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    transition: transform 0.3s ease;
+    z-index: 101;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-theme {
+    background-color: #120901;
+    color: #fff;
+}
+
+header.dark-theme {
+    background-color: #120901;
+    color: #fff;
+}
+
+header.dark-theme .logo {
+    color: #fff;
+}
+
+body.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+header.light-theme {
+    background-color: #fff;
+    color: #000;
+    filter: none; 
+}
+
+header.light-theme .logo {
+    color: #000;
+}
+
+body {
+    background-color: #120901;
+    color: #fff;
+}
+
+body.light-theme {
+    background-color: #fff;
+    color: #000; 
+}
+
+body.light-theme header {
+    background-color: #fff; 
+    color: #000;
+}
+
+body.light-theme .logo,
+body.light-theme .inicio-conteudo h1,
+body.light-theme .inicio-conteudo h3,
+body.light-theme .scroll-down,
+body.light-theme .sobre-box h2,
+body.light-theme .habilidades-box h2,
+body.light-theme .projetos-box h2,
+body.light-theme .contato-box h2,
+body.light-theme .sobre-box p,
+body.light-theme .habilidades-box p,
+body.light-theme .projetos-box p,
+body.light-theme .contato-box p {
+    color: #000; /* Texto preto */
+}
+
+body.light-theme a {
+    color: #000; 
+}
+
+body.light-theme .fa {
+    color: #000; 
+}
+
+body.light-theme .projeto-card p {
+    color: #fff;
+}
+
+body.light-theme .contato-box label {
+    color: #000; 
+}
+
+body.light-theme .projeto-link{
+    color: #ffd700;
+}
+
+body.dark-theme #theme-toggle i {
+    color: #fff;
+    font-size: 3rem !important;
+}
+
+body:not(.dark-theme) #theme-toggle i {
+    color: #000;
+    font-size: 3rem !important;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem; 
+        padding: 10px; 
+    }
+
+    header {
+        padding: 10px 0;
+        font-size: 1.2rem; 
+    }
+
+    #theme-toggle {
+        font-size: 2rem; 
+        padding: 8px 10px; 
+    }
+
+    .content {
+        margin: 10px 0;
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 1rem; 
+        padding: 15px; 
+    }
+
+    header {
+        font-size: 1.5rem; 
+        padding: 20px 0;
+    }
+
+    #theme-toggle {
+        font-size: 2.5rem;
+        padding: 10px 12px;
+    }
+
+    .content {
+        margin: 20px auto;
+        padding: 20px; 
+        max-width: 90%; 
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 1.2rem; 
+        padding: 20px; 
+    }
+
+    header {
+        font-size: 2rem; 
+        padding: 30px 0;
+    }
+
+    #theme-toggle {
+        font-size: 3rem; 
+        padding: 12px 16px; 
+    }
+
+    .content {
+        margin: 30px auto;
+        padding: 30px; 
+        max-width: 80%; 
+    }
+
+    .footer {
+        font-size: 1rem; 
+    }
 }

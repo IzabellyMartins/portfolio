@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <header>
+<body id="theme" class="dark-theme">
+    <header id="main-header">
         <a href="#pagina-inicial" class="logo">Izabelly Martins</a>
-
-        <nav>
-            <a href="#pagina-inicial" class="">Início</a>
-            <a href="#sobre" class="">Sobre</a>
-            <a href="#habilidades" class="">Habilidades</a>
-            <a href="#projetos" class="">Projetos</a>
-            <a href="#contato" class="">Contato</a>
-        </nav>
+        <button id="theme-toggle" aria-label="Alterar tema">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
+    
 
     <div class="inicio" id="pagina-inicial">
         <div class="inicio-img">
@@ -42,8 +38,8 @@
             <p>
                 Sou estudante de Engenharia da Computação na UFS, apaixonada pela área da tecnologia e
                 atualmente trabalhando para desenvolver minhas habilidades e me tornar uma desenvolvedora
-                Full-Stack. Agora, especializando minhas habilidades no back-end estudando Java e Spring Boot.
-                e buscando criar soluções eficientes e escaláveis. Estou envolvida em projetos que incluem APIs,
+                Full-Stack. Agora, especializando minhas habilidades no back-end estudando Java e Spring Boot,
+                buscando criar soluções eficientes e escaláveis. Estou envolvida em projetos que incluem APIs,
                 microsserviços, arquitetura MVC e princípios SOLID. 
                 Meu objetivo é sempre aprender e aplicar novas tecnologias
                 para crescer em minha jornada como desenvolvedora.
@@ -71,13 +67,19 @@
                     <img src="assets/js.png" class="habilidade-icone" alt="JavaScript">
                     <img src="assets/node-js.png" class="habilidade-icone" alt="NodeJs">
                     <img src="assets/express.svg" class="habilidade-icone" alt="ExpressJs">
-                    <img src="assets/mongodb.svg" class="habilidade-icone" alt="Mongodb">
-                    <img src="assets/mysql.png" class="habilidade-icone" alt="MySql">
-                    <img src="assets/postgre.png" class="habilidade-icone" alt="Postgres">
                     <img src="assets/prisma.svg" class="habilidade-icone" alt="Prisma">
                     <img src="assets/docker.png" class="habilidade-icone" alt="Docker">
                     <img src="assets/java.png" class="habilidade-icone" alt="Java">
                     <img src="assets/spring-boot.svg" class="habilidade-icone" alt="SpringBoot">
+                </div>
+                
+            </div>
+            <div class="habilidade-secao">
+                <p class="habilidade-titulo"><strong>Banco de dados:</strong></p>
+                <div class="habilidade-icones">
+                    <img src="assets/mongodb.svg" class="habilidade-icone" alt="Mongodb">
+                    <img src="assets/mysql.png" class="habilidade-icone" alt="MySql">
+                    <img src="assets/postgre.png" class="habilidade-icone" alt="Postgres">
                 </div>
                 
             </div>
