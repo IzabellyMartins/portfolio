@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3em;
+    background: #fef4ff;
+    color: black;
+    padding-top: 20px; 
+}
+
+
+header {
+    width: 100%;
+    background: white;
+    z-index: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-shadow: 1px 1px black; 
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px 50px; 
+}
+
+.sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.sobre-imagem {
+    width: 40%;
+    max-width: 500px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;      
+}
+
+p {
+    font-size: 0.9em;  
+    color: black;
+    max-width: 600px;
+    margin-top: 0;
+    text-align: justify;
+    line-height: 1.5;  
+    word-spacing: -1px; 
+    margin-bottom: 10px;  
+}
+
+.sobre-texto a {
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.sobre-texto a:hover {
+    text-shadow: 1px 1px black; 
+}
+
+footer {
+    margin-top: 25px;
+    background-color: #2c2c2a; 
+    color: white;
+    padding: 20px 0;
+    text-align: center; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: white;
+    white-space: nowrap; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagem {
+        width: 80%;
+    }
+
+    .sobre-texto {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        color: black;
+        position: absolute;
+        right: 20px; 
+        top: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .sobre-texto h1 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

@@ -1,24 +1,25 @@
-// Colocando o modo dark e light
-const themeToggleButton = document.getElementById("theme-toggle");
-const body = document.body;
-const header = document.getElementById("main-header");
+document.addEventListener("DOMContentLoaded", function () {
+  // Carregando a navbar em todas as páginas
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar-container').innerHTML = data;
+          const menuToggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector("nav");
+          const ul = nav.querySelector("ul");
 
-themeToggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark-theme");
-    body.classList.toggle("light-theme");
-    header.classList.toggle("dark-theme");
-    header.classList.toggle("light-theme");
+          menuToggle.addEventListener("click", function () {
+              ul.classList.toggle("show"); 
+          });
+      })
+      .catch(error => console.error('Erro ao carregar a navbar:', error));
 
-    // Alterar ícone do botão de acordo com o tema
-    const icon = themeToggleButton.querySelector("i");
-    if (body.classList.contains("dark-theme")) {
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
-    } else {
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
-    }
+  // Carregando o footer em todas as páginas
+  fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footer-dinamico').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar o footer:', error));
 });
-
-
 
